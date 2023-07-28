@@ -43,7 +43,7 @@ Para mais informações ou perguntas sobre o projeto, entre em contato pelo e-ma
 
 Agradecemos à comunidade Spring Boot e ao GitHub por fornecer esta plataforma para compartilhar projetos.
 
-Neste exemplo, você pode ver como a estrutura é organizada, com informações sobre o projeto, funcionalidades, tecnologias utilizadas, pré-requisitos e instruções para execução. Também incluímos capturas de tela simuladas para ilustrar a aparência da aplicação. Lembre-se de personalizar as seções com os detalhes específicos do seu projeto real.
+Neste exemplo, você pode ver como a estrutura é organizada, com informações sobre o projeto, funcionalidades, tecnologias utilizadas e pré-requisitos. Também incluímos capturas de tela simuladas para ilustrar a aparência da aplicação. Lembre-se de personalizar as seções com os detalhes específicos do seu projeto real.
 
 Espero que este exemplo lhe dê uma ideia de como criar um README.md espetacular para o seu repositório!
 
