@@ -24,7 +24,10 @@ public class Product {
 	private String title;
 	private String image;
 	private Integer price;
-	
-	
 
+	public Product(ProductRequestDTO data) {
+		this.image = data.image();
+		this.price = data.price();
+		this.title = data.title();
+	}
 }
