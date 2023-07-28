@@ -2,6 +2,7 @@ package com.matusmoura.catalogodonab.controller;
 
 import java.util.List;
 
+import com.matusmoura.catalogodonab.product.ProductResponseDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,8 +19,8 @@ public class ProductController {
 	private ProductReposirory productRepository;
 	
 	@GetMapping
-	public List<Product> getAll() {
-		List<Product> productList = productRepository.findAll();
+	public List<ProductResponseDTO> getAll() {
+		List<ProductResponseDTO> productList = productRepository.findAll().stream().map(ProductResponseDTO::new).toList();
 		return productList;
 	}
 }
