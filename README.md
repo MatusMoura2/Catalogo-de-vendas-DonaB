@@ -17,18 +17,15 @@ Este projeto é um catálogo de produtos desenvolvido para ajudar [Dona B] em se
 - Spring Boot
 - Banco de Dados PostgreSQL
 
+## Padrão DTO
+
+O projeto utiliza o padrão de projeto DTO (Data Transfer Object) para transferir dados entre as diferentes camadas da aplicação. Isso ajuda a manter a separação de preocupações e simplificar a comunicação entre os componentes.
+
 ## Pré-requisitos
 
 - Java JDK 11 ou superior instalado
 - Maven para compilação e gerenciamento de dependências
 - Banco de Dados PostgreSQL configurado e em execução
-
-## Como Executar o Projeto
-
-1. Clone este repositório para o seu ambiente local.
-2. Navegue para o diretório do projeto.
-3. Execute o comando "mvn spring-boot:run" para iniciar o servidor local.
-4. Acesse a aplicação em http://localhost:8080 no seu navegador.
 
 ## Licença
 
