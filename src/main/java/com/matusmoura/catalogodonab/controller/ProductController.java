@@ -9,6 +9,7 @@ import com.matusmoura.catalogodonab.dto.product.ProductRequestDTO;
 import com.matusmoura.catalogodonab.dto.product.ProductResponseDTO;
 import com.matusmoura.catalogodonab.model.Product;
 import com.matusmoura.catalogodonab.repository.ProductReposirory;
+import org.springframework.http.HttpStatus;
 
 @RestController
 @RequestMapping("product")
@@ -18,10 +19,12 @@ public class ProductController {
 	private ProductReposirory productRepository;
 
 	@PostMapping
-	public void saveProduct(@RequestBody ProductRequestDTO data) {
+	@ResponseStatus(HttpStatus.CREATED)
+	public Product saveProduct(@RequestBody ProductRequestDTO data) {
 		Product productData = new Product(data);
 		productRepository.save(productData);
-		return;
+
+		return productData;
 	}
 
 	@GetMapping
